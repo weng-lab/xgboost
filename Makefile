@@ -205,7 +205,7 @@ clean_all: clean
 	cd $(RABIT); "$(MAKE)" clean; cd $(ROOTDIR)
 
 doxygen:
-	doxygen doc/Doxyfile
+	doxygen doxygen.conf
 
 # create standalone python tar file.
 pypack: ${XGBOOST_DYLIB}
